@@ -1,0 +1,68 @@
+//
+//  CrystalPrefixHeader.pch
+//  水晶球财经
+//
+//  Created by Tom lu on 15/10/28.
+//  Copyright © 2015年 com.sjqcj. All rights reserved.
+//
+
+#ifndef CrystalPrefixHeader_pch
+#define CrystalPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define APPBackColor [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
+#define SCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define RGB(A,B,C) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
+#define DefaultUserImage [UIImage imageNamed:@"man"]  
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+#define MainUrl @"http://www.sjqcj.com/index.php?"  //  ip地址
+#define MainImg @"http://www.sjqcj.com/data/upload/avatar" //上传 更换用户图片前面路径
+#define WeiBoImg @"http://www.sjqcj.com/data/upload/"      //获取 （图片短微博的）图片
+
+#define Url_Login    @"app=public&mod=Passport&act=AppLogin"   //登录
+
+
+#define Url_GoodPost @"app=index&mod=Index&act=Appindex" //首页-精华微博
+#define Url_BigMan   @"app=index&mod=Index&act=APPUserSort" //首页-牛人列表
+#define Url_OnePost  @"app=public&mod=Profile&act=Appfeed"  //某一个博客详情
+#define Url_OnePost_Comment @"app=public&mod=Profile&act=AppComment" //一个帖子的回复
+#define Url_Function_StockGame  @"app=public&mod=AppFeedList&act=AppBallot" //选股比赛
+
+#define Url_FinanceFocus  @"app=public&mod=Profile&act=AppCentre"   //新闻-财经焦点列表
+#define Url_UserInfo @"app=public&mod=Profile&act=AppUser"  //用户中心-用户信息
+#define Url_UserInfo_Money @"app=public&mod=Profile&act=AppUserMoney"//用户中心-财富信息
+#define Url_UserInfo_ChangeInfo  @"app=public&mod=AppFeedList&act=AppSaveProfile" //用户中心-修改用户信息
+#define Url_UserInfo_UploadHeadImage @"app=public&mod=AppFeedList&act=AppSaveAvatar&step=upload" //上传用户头像
+#define Url_UserInfo_ChangeHeadImage @"app=public&mod=AppFeedList&act=AppSaveAvatar&step=save" //跟新用户头像
+#define Url_UserInfo_MyCareList @"app=public&mod=AppFeedList&act=AppFollowing"   //我关注的列表
+#define Url_UserInfo_MyFansList @"app=public&mod=AppFeedList&act=AppFollower"    //我的粉丝列表
+
+
+#define Url_FinanceFocus_OneNews @"app=public&mod=Profile&act=Appnews" //新闻-财经焦点详情
+
+#define Url_Bar_Post_List @"app=public&mod=FeedListMini&act=loadMore"   //股吧-全部微博 或 关注的微博
+
+#define Url_Bar_Top @"app=public&mod=AppFeedList&act=Left_feed_top" //股吧-置顶微博
+#define Url_Bar_ShortPost_UploadImage @"app=public&mod=AppFeedList&act=AppUpload"  //股吧-短微博-图片上传
+#define Url_Bar_ShortPost_Upload   @"app=public&mod=AppFeedList&act=AppPostFeed"   //股吧 上传短微博数据
+
+#define Url_Post_Dig  @"app=public&mod=AppFeedList&act=AddDigg"// 对帖子点赞
+#define Url_Post_DeDig @"app=public&mod=AppFeedList&act=DelDigg" //帖子详情-取消赞
+#define Url_Post_Collect @"app=public&mod=AppFeedList&act=AddCollection" //贴子详情-收藏
+#define Url_Post_UnCollect @"app=public&mod=AppFeedList&act=DelCollection" //帖子详情-取消收藏
+#define Url_Post_Forward  @"app=public&mod=AppFeedList&act=AppForward" //帖子详情-转发
+
+#define Url_Message_MyCommentList @"app=public&mod=AppFeedList&act=MyComment" //消息-我的评论-我收到的评论
+#define Url_AeTeFriendList  @"app=public&mod=AppFeedList&act=AppFriendGroup" //  编辑，回复某好友的时候
+
+
+#define PLACEHOLDERIMAGE [UIImage imageNamed:@"man"]
+#define NoNetworkingMsg @"没有数据"
+
+#endif /* CrystalPrefixHeader_pch */
